@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    padding: 2;
+    margin: 2;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header {
+    display: inline-block;
+    font-size: 35px;
+    text-align: right;
+}
+
+.nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: left;
+    text-align: left;
+    font-size: 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+}
