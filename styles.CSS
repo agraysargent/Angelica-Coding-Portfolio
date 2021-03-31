@@ -10,6 +10,7 @@ body {
 }
 
 .header {
+    flex-direction: row;
     display: inline-block;
     font-size: 35px;
     text-align: right;
@@ -20,8 +21,17 @@ body {
     margin-right: 20px;
     float: left;
     text-align: left;
-    font-size: 35px;
+    font-size: 20px;
     font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
     background-color: whitesmoke;
     color: black;
+}
+
+.top {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 15px;
+    background-image: url("./Assets/Images/Portfolio\ Header.gif");
+    background-size: cover;
+    background-position: center;
 }
