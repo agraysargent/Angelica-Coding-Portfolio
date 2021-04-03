@@ -19,6 +19,8 @@ body {
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 81, 255));
 }
 
+/*updated the transitions in the header's nav to be smoother*/
+
 .h1header {
     display: inline-block;
     padding-top: 2px;
@@ -45,18 +47,17 @@ a {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
-}
 
 p {
     font-size: 16px;
 }
 
+/* need to make a literal box for about me */
 
 .AboutMe {
     margin-top: 90px;
     padding-left: 10px;
     margin-left: 10px;
-    height: 100px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -67,16 +68,22 @@ p {
     overflow:auto;
 }
 
-.AboutMe div, .Experience div {
+.AboutMe div {
     display: inline;
 }
 
 .AboutMe h2, .Experience h2 {
-    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 50px;
 }
 
 .AboutMe p {
-    width: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    margin-left: 40%;
 }
 
 .Refractor {
@@ -86,10 +93,10 @@ p {
 }
 
 .Temporary {
-    width: auto;
+    width: 400px;
     height:auto;
     display: table-column;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .Refractor:hover {
@@ -104,45 +111,40 @@ p {
     filter:blur(10px);
 }
 
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-/*
-
-#Container1 {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 600px;
+.Experience {
     width: 100%;
 }
 
-.Experience {
-    width: auto;
+.work {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
 }
+
+.TempBox {
+    flex: 1 0 60%;
+    padding: 30px;
+}
+
+.TempBox.Full {
+    flex: 1 0 100%;
+}
+
+.TempBox img {
+    width: 40%;
+    height: auto;
+}
+
+.Contact {
+    margin-left: 30px;
+    font-size: 50px;
+}
+
+/* need to fix the flexbox containers for the images to fit properly*/
 
 .content {
     height: auto;
     width: 100%;
-}
-
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-start;
-}
-
-.Contact {
 }
 
 .footer {
@@ -150,5 +152,5 @@ p {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(0, 81, 255));
 }
-*/
