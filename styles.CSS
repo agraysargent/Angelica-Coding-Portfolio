@@ -5,18 +5,19 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(30, 30, 119));
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header {
-    padding: 20px;
+    padding: 10px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: black;
     height: 100px;
     width: 100%;
     margin-bottom: 10px;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(30, 30, 119));
+    border-bottom: 5px solid black;
 }
 
 /*updated the transitions in the header's nav to be smoother*/
@@ -26,13 +27,10 @@ body {
     font-size: 48px;
 }
 
-
 .navbar {
-    box-sizing: border-box;
     margin-bottom: 10px;
     margin-right: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
 }
 
 a:hover {
@@ -63,7 +61,6 @@ p {
     flex-wrap: wrap;
     text-align:left;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:whitesmoke;
     color: black;
     overflow:auto;
 }
@@ -73,19 +70,25 @@ p {
 }
 
 .AboutMe h2 {
-    margin-left: 30px;
-    margin-top: 110px;
+    margin-left: -9px;
+    margin-top: 100px;
     font-size: 50px;
 }
 
+.MyFace-img {
+    margin-left: 24px;
+    width: 30%;
+    height: auto;
+}
+
 .AboutMe p {
-    width: 800px;
-    padding: 10px;border: 5px solid rgb(30, 30, 119);
-    margin: 100px;
+    width: 700px;
+    padding: 10px;
+    margin: 13px;
 }
 
 .Experience h2 {
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 20px;
     font-size: 50px;
 }
@@ -120,45 +123,56 @@ p {
 }
 
 .work {
-    display: grid;
     width: 100%;
-    flex-flow: row wrap;
+    display:grid;
 }
 
-.TempBox.Full {
+.TempBox-Full {
     display: flex;
     width: 100%;
     flex: 1 0 100%;
-    padding: 20px;
+    padding: 10px;
 }
 
-.TempBoxSmall {
+.TempBox-Small {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
 }
 
 .TempBox img {
+    float: right;
     width: 30%;
     height: auto;
 }
 
 .Contact {
-    margin-left: 30px;
+    border-top: 5px solid black;
     font-size: 50px;
+    margin-left: 2px;
 }
 
 /* need to fix the flexbox containers for the images to fit properly*/
 
-.content {
-    height: auto;
-    width: 100%;
-}
-
 .footer {
+    border-top: 5px solid black;
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(30, 30, 119));
+}
+
+/* screenwidth less than 1024px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 1024px) {
+
+    .AboutMe p {
+        width: 100px;
+        height: 114px;
+        margin-left: 12px;
+    }
+    .about { width: 50%; }
+    .about { width: 50%; }
+
 }
