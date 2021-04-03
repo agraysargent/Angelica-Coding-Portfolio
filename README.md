@@ -29,7 +29,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 Angelica Sargent
 
 # Screenshot
-![Screenshot](./Assets/images/Screenshot.png)
+![Screenshot](./Assets/Images/Screenshot.png)
 
 # Link
 Take a look at this [link](https://agraysargent.github.io/Angelica-Coding-Portfolio/)
