@@ -5,6 +5,7 @@
     <link rel="shortcut icon" type="image/jpg" href="Assets/images/Portfolio Image Tab - Angelica.ico"/>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./Assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
     <title>Angelica Sargent</title>
 </head>
@@ -14,84 +15,91 @@
 
 <body>
 
-    <header class="header">
-        <h1 class="h1header">Angelica Sargent</h1>
-        <nav class="nav">
-            <ul>
-                <div class="navbar">
-                    <a class="active" href="#Home"> Home</a>
-                    <a href="#AboutMe"> About Me</a>
-                    <a href="#Experience"> Experience</a>
-                    <a href="#Contact"> Contact</a>
-                </div>
+    <nav class="navbar navbar-dark bg-dark" aria-label="First navbar example">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Angelica Sargent</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="navbar-collapse collapse show" id="navbarsExample01" style="">
+            <ul class="navbar-nav me-auto mb-2">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Sections</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                  <li><a class="dropdown-item" href="#AboutMe">About Me</a></li>
+                  <li><a class="dropdown-item" href="#Experience">Experience</a></li>
+                  <li><a class="dropdown-item" href="#Contact">Contact</a></li>
+                  <li><a class="dropdown-item" href="https://drive.google.com/file/d/1wf7dzSZAhJw5nl7SFLzIbixZUYj5taZ7/view?usp=sharing">Resume</a></li>
+                </ul>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
+      </nav>
 
-<!---Adjusted divs and clearly marked classes and ID sections-->
-
-        <section id="AboutMe" class="AboutMe">
-            <div>
-                <h2>About Me</h2>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+        
+                    <div>
+                        <h2>About Me</h2>
+                    </div>
+           
+                    <img class = MyFace-img src="Assets/Images/my face.png">
+                    <p>
+                        Hi there! My name is Angelica Sargent and I'm a digital marketing coordinator with a
+                        Communications
+                        degree from the University of Connecticut. <br> I'm a results-driven professional, who also
+                        possesses a strong background in retail, in addition
+                        to
+                        social media management, with a demonstrable record of success in management and customer,
+                        client
+                        and
+                        employee satisfaction.
+                    </p>
+           
             </div>
-            <div>
-                <img class = MyFace-img src="Assets/Images/my face.png">
-                <p>
-                    Hi there! My name is Angelica Sargent and I'm a digital marketing coordinator with a
-                    Communications
-                    degree from the University of Connecticut. <br> I'm a results-driven professional, who also
-                    possesses a strong background in retail, in addition
-                    to
-                    social media management, with a demonstrable record of success in management and customer,
-                    client
-                    and
-                    employee satisfaction.
-                </p>
-            </div>
-        </section>
-
+          <div class="col">
         <section id="Experience" class="Experience">
             <div>
                 <h2>Experience</h2>
             </div>
-            <div class="work">
-
-                <div class="TempBox-Full">
-                    <a href="https://agraysargent.github.io/CodingRefractorHW1/"><img
-                            src="./Assets/Images/Copy of Refractoring Screenshot.png" alt="" class="Refractor"></a>
+        
+            <div class="row">
+                <!-- <div class="col-6">
+                    <div class="TempBox-Full">
+                        <a href="https://agraysargent.github.io/CodingRefractorHW1/"><img
+                                src="" alt="" class="Refractor"></a>
+                    </div>
+                </div> -->
+                <div class="col-6">
+                    <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Contact.png" alt=""
+                        class="Temporary"></a></div>
                 </div>
-
-                <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Contact.png" alt=""
-                            class="Temporary"></a></div>
-                <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Experience.png" alt=""
-                            class="Temporary"></a></div>
-                <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Contact.png" alt=""
-                            class="Temporary"></a></div>
-                <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Experience.png" alt=""
-                            class="Temporary"></a></div>
+                <div class="col-6">
+                    <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Experience.png" alt=""
+                                class="Temporary"></a></div>
+                <div class="col-6">
+                    <div class="TempBox-Small"><a href="https://google.com"><img src="./Assets/Images/Experience.png" alt=""
+                        class="Temporary"></a></div>
+                </div>
             </div>
+
         </section>
-        </article>
-    </main>
-
-    <section id="Contact" class="Contact">
-        <div>
-            <h2>Contact</h2>
+          </div>
         </div>
-        <div>
-            <p>
-                <a href="mailto:agraysargent@gmail.com">Email</a>
-                <a href="https://github.com/agraysargent">Github</a>
-                <a href="https://www.linkedin.com/in/angelica-sargent-81a8a2132">LinkedIn</a>
-                <a href="https://www.twitch.tv/syrin_says">Twitch</a>
-            </p>
+      </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+          <span class="text-muted">Made by Angelica Sargent ¯\_(ツ)_/¯</span>
+          <div><a href="mailto:agraysargent@gmail.com">Email</a>
+                        <a href="https://github.com/agraysargent">Github</a>
+                        <a href="https://www.linkedin.com/in/angelica-sargent-81a8a2132">LinkedIn</a>
+                        <a href="https://www.twitch.tv/syrin_says">Twitch</a>
+                        </div>
         </div>
-    </section>
-
-    <footer class="footer">
-        Made by Angelica Sargent ¯\_(ツ)_/¯
-    </footer>
-
+      </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </html>
